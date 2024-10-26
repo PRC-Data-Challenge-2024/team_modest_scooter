@@ -167,8 +167,6 @@ alladsbdata.rename(columns=lambda x: x + '_old' if x != 'flight_id' else x, inpl
 
 
 #%%
-# kiem tra list categories cua ban submission DF co nam trong DF cua TRaining het chua???????
-
 # numeric_columns = ['flight_duration', 'taxiout_time', 'flown_distance', 'avg_groundspeed', 'max_groundspeed', 'std_vertical_rate', 'avg_altitude', 'avg_temperature', 'avg_wind_speed', 'max_wind_speed', 'std_wind_speed', 'avg_specific_humidity', 'climb_duration']
 # numeric_columns = [
 #        'avg_tas', 'min_tas', 'max_tas', 'std_tas', 'avg_track', 'min_track',
