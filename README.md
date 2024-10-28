@@ -7,8 +7,11 @@
    5. Min,max,avg,std track
    6. Drift Angle during the flight
    7. Min,max,avg,std teamperature,humidity
-   8. Take-off duration: duration from take off to cruising period
+   8. Take-off duration: duration from take off to cruising period (using actual off-block time + taxi time as take-off time)
    9. final_descent_rate: mean vertical rate of last 5 min before landing
    10. initial_climb_rate: mean vertical rate of last 5 min after takeoff
-From what i read, the take aircraft 
+From what i read, the aircraft weight affected the take-off the most, heavier aircraft tend to climber slower (slower vertical rate), flight faster (higher tas), take longer to reach cruising speed
+So i add some features for take-off duration
+  11. Min,max,avg,std tas during take-off
+  12. 
   
