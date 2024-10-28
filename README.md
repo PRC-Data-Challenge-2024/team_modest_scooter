@@ -31,5 +31,6 @@ For the training dataset, using several machine learning model (random forest, N
        2. Some combination of aircraft_type, airline, adep-ades have 0 std (same value of tow), some airlines had low set of lit values for some specific routes, using classification on these airline would gave beter result, i also think that train different model for different airline would be better but did not have the time to try.
        3. 
  * What i think could improve the model:
-      1. Schedule flights data all-flights of year 2022, with flights is canceled, which flight is need to changed aircraft during operation, which aircraft is using for each flights.... Unforternately i did not have access to any of these data.
-      2. 
+      1. Schedule flights data all-flights of year 2022, with flights is canceled, which flight is need to changed aircraft during operation, which aircraft is using for each flights, the turn around process of each aircraft: which flight is link with which flight.... Unforternately i did not have access to any of these data.
+      2. FlightType: PAX flights or CGO flights
+      3. 
