@@ -26,8 +26,8 @@ For the training dataset, using several machine learning model (random forest, N
           'avg_specific_humidity', 'std_vertical_rate_x', 'takeoff_duration',
           'mean_takeoff_tas', 'max_takeoff_tas','mean_takeoff_vertical_rate',]
   * Some observations:
-   _ Using date both as category and numeric features did not yeild good results, although its clear that certain days got higher mean tow than others day, especically before big hoildays: For example there is a surge at day 30 April, 30Sep...
-   _ 
+       1. Using date both as category and numeric features did not yeild good results, although its clear that certain days got higher mean tow than others day, especically before big hoildays: For example there is a surge at day 30 April, 30Sep...
+       2. 
  * What i think could improve the model:
    _ Schedule flights data all-flights of year 2022, with flights is canceled, which flight is need to changed aircraft during operation, which aircraft is using for each flights.... Unforternately i did not have access to any of these data.
    _ 
