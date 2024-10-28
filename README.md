@@ -27,10 +27,11 @@ For the training dataset, using several machine learning model (random forest, N
           'mean_takeoff_tas', 'max_takeoff_tas','mean_takeoff_vertical_rate',]
   For the records with no adsb data/no take-off data i trained a different model with different set of numeric/category columns and combine the results.
   * Some observations:
-       1. Using date both as category and numeric features did not yeild good results, although its clear that certain days got higher mean tow than others day, especically before big hoildays: For example there is a surge at day 30 April, 30Sep...
+       1. Using 'date' both as category and numeric features did not yeild good results, although its clear that certain days got higher mean tow than others day, especically before big hoildays: For example there is a surge at day 30 April, 30Sep...
        2. Some combination of aircraft_type, airline, adep-ades have 0 std (same value of tow), some airlines had low set of lit values for some specific routes, using classification on these airline would gave beter result, i also think that train different model for different airline would be better but did not have the time to try.
-       3. 
+       3. There are some divert flights in the dataset, which is a flight go from A to B but divert to C then a new flight is going from C to B, this need to be indentify because the original was suppose from A to B, thus must be train with ades = B, although i did not imeplemented this in my code
+       4. Some flights tow in a given day is affected by other flights of the same airlines, i noticed some case where 2 flights of 2 different aircraft-type in the same days also swap their tow if their time of day swaped.
  * What i think could improve the model:
       1. Schedule flights data all-flights of year 2022, with flights is canceled, which flight is need to changed aircraft during operation, which aircraft is using for each flights, the turn around process of each aircraft: which flight is link with which flight.... Unforternately i did not have access to any of these data.
       2. FlightType: PAX flights or CGO flights
-      3. 
+      3. Booking or pax quantity is also good data (if available)
